@@ -1,0 +1,597 @@
+{
+  "experiment": "1 - coverage",
+  "question": "How many ECD papers does PubTator3 tag, against the two different PubMed denominators?",
+  "coverage": {
+    "pubtator3_ecd_pmids": 2288,
+    "pubmed_mesh_indexed": {
+      "count": 965,
+      "query": "\"erdheim chester disease\"[MeSH Terms]"
+    },
+    "pubmed_text_matched": {
+      "count": 1599,
+      "query": "\"Erdheim-Chester\"[All Fields]"
+    },
+    "vs_mesh_indexed": {
+      "delta": 1323,
+      "ratio": 2.371,
+      "means": "does PubTator3 recover what NLM already curated"
+    },
+    "vs_text_matched": {
+      "delta": 689,
+      "ratio": 1.431,
+      "means": "does PubTator3 find ECD papers NLM never MeSH-indexed"
+    },
+    "mesh_key": "MESH:D031249"
+  },
+  "surface_forms": [
+    {
+      "surface": "Erdheim-Chester disease",
+      "n_rows": 1850,
+      "n_pmids": 1850
+    },
+    {
+      "surface": "ECD",
+      "n_rows": 849,
+      "n_pmids": 849
+    },
+    {
+      "surface": "Erdheim-Chester Disease",
+      "n_rows": 376,
+      "n_pmids": 376
+    },
+    {
+      "surface": "Erdheim Chester disease",
+      "n_rows": 111,
+      "n_pmids": 111
+    },
+    {
+      "surface": "Erdheim-Chester",
+      "n_rows": 54,
+      "n_pmids": 54
+    },
+    {
+      "surface": "Erdheim Chester Disease",
+      "n_rows": 46,
+      "n_pmids": 46
+    },
+    {
+      "surface": "ECD lesions",
+      "n_rows": 15,
+      "n_pmids": 15
+    },
+    {
+      "surface": "Erdheim-chester disease",
+      "n_rows": 14,
+      "n_pmids": 14
+    },
+    {
+      "surface": "Erdheim-Chester's disease",
+      "n_rows": 12,
+      "n_pmids": 12
+    },
+    {
+      "surface": "erdheim-chester disease",
+      "n_rows": 11,
+      "n_pmids": 11
+    },
+    {
+      "surface": "Erdheim's disease",
+      "n_rows": 10,
+      "n_pmids": 10
+    },
+    {
+      "surface": "Erdheim-Chester syndrome",
+      "n_rows": 10,
+      "n_pmids": 10
+    },
+    {
+      "surface": "Erdheim-Gsell",
+      "n_rows": 10,
+      "n_pmids": 10
+    },
+    {
+      "surface": "lipid granulomatosis",
+      "n_rows": 10,
+      "n_pmids": 10
+    },
+    {
+      "surface": "Chester-Erdheim disease",
+      "n_rows": 9,
+      "n_pmids": 9
+    },
+    {
+      "surface": "ECD disease",
+      "n_rows": 8,
+      "n_pmids": 8
+    },
+    {
+      "surface": "Erdheim-Chester histiocytosis",
+      "n_rows": 7,
+      "n_pmids": 7
+    },
+    {
+      "surface": "Gsell-Erdheim syndrome",
+      "n_rows": 7,
+      "n_pmids": 7
+    },
+    {
+      "surface": "ECD lesion",
+      "n_rows": 6,
+      "n_pmids": 6
+    },
+    {
+      "surface": "Erdheim Chester",
+      "n_rows": 6,
+      "n_pmids": 6
+    },
+    {
+      "surface": "neuro-ECD",
+      "n_rows": 6,
+      "n_pmids": 6
+    },
+    {
+      "surface": "EC",
+      "n_rows": 5,
+      "n_pmids": 5
+    },
+    {
+      "surface": "CNS-ECD",
+      "n_rows": 4,
+      "n_pmids": 4
+    },
+    {
+      "surface": "ECD-LCH",
+      "n_rows": 4,
+      "n_pmids": 4
+    },
+    {
+      "surface": "Erdheim- Chester disease",
+      "n_rows": 4,
+      "n_pmids": 4
+    },
+    {
+      "surface": "Erdheim-Chester's Disease",
+      "n_rows": 4,
+      "n_pmids": 4
+    },
+    {
+      "surface": "Erdhiem-Chester disease",
+      "n_rows": 4,
+      "n_pmids": 4
+    },
+    {
+      "surface": "Cerebral Erdheim-Chester disease",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "ECD tumor",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "ECD tumors",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "ERDHEIM-CHESTER DISEASE",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Erdheim",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Erdheim - Chester disease",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Erdheim chester disease",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Erdheim-Chester diseases",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Gsell-Erdheim disease",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Lipid Granulomatosis",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "Lipid granulomatosis",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "neurologic ECD",
+      "n_rows": 3,
+      "n_pmids": 3
+    },
+    {
+      "surface": "CNS ECD",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Chester-Erdheim's disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "EC disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "ECD CNS",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "ECD LCH RDD",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "ECD histiocytosis",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "ECD-LCH overlap syndrome",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "ECd",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Edheim-Chester disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim Chester's Disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim Chester's disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim- Chester Disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim--Chester disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester (EC) disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester (ECD) disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester disease involvement",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester disease lesion",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester disease lesions",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester lesions",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Erdheim-Chester's disease of the heart",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "Neutrophilic panniculitis    Erdheim-Chester",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "cardiovascular ECD",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "histiocytosis ECD",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "lipid (cholesterol) granulomatosis",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "orbital Erdheim-Chester disease",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "pulmonary ECD",
+      "n_rows": 2,
+      "n_pmids": 2
+    },
+    {
+      "surface": "-Chester disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "1Erdheim Chester disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "AECD",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Cardiac Erdheim-Chester",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Cardiovascular ECD",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Central Nervous System Erdheim-Chester Disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Central nervous system Erdheim Chester disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Cerebral Erdheim-Chester Disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Cerebral Microvascular Erdheim-Chester Disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Cerebrovascular ECD",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Chester disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "Chester-Erdheim syndrome",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "E-C D",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "E-C disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "E-Cd",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD - Erdheim-Chester disease",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD 2, 3",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD 5, 6, 7",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD CNS lesions",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD Neuro",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD abnormalities",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD bone lesions",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD brain lesions",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD cardiovascular involvement",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD complications",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD cutaneous lesions",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD dysfunction",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD heart complication",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD heart involvement",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD meningeal lesion",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD of",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD of the",
+      "n_rows": 1,
+      "n_pmids": 1
+    },
+    {
+      "surface": "ECD of the medulla",
+      "n_rows": 1,
+      "n_pmids": 1
+    }
+  ],
+  "build": {
+    "build_id": "2026-08-17",
+    "span_seconds": 96,
+    "ingested_at": "2026-08-31T08:50:04.426693",
+    "files": [
+      {
+        "filename": "relation2pubtator3.gz",
+        "last_modified": "2026-08-17T13:41:35",
+        "content_length": 297478945,
+        "bytes_received": 297478945,
+        "sha256": "6fca7a4c6a7b6fb9b727d564b1fc1aff1b04c0dfcadbc53aba188fb844e3ac42",
+        "etag": null,
+        "rows_parsed": 40094383,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:54:14.351922",
+        "parsed_at": "2026-08-31T08:59:12.767729"
+      },
+      {
+        "filename": "chemical2pubtator3.gz",
+        "last_modified": "2026-08-17T13:42:42",
+        "content_length": 1874031901,
+        "bytes_received": 1874031901,
+        "sha256": "d973e7022691db5f5dd0f45c46d95063fef30ada3fe8c37095c85b1486c14f80",
+        "etag": null,
+        "rows_parsed": 146957635,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T09:02:40.314501",
+        "parsed_at": "2026-08-31T09:04:47.570189"
+      },
+      {
+        "filename": "disease2pubtator3.gz",
+        "last_modified": "2026-08-17T13:43:00",
+        "content_length": 2173480950,
+        "bytes_received": 2173480950,
+        "sha256": "9896ad7ac33760afdd3d0faca6a8a2cc2478b190dfdf29520872de7d1ef0a3ee",
+        "etag": null,
+        "rows_parsed": 168305967,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:52:18.080623",
+        "parsed_at": "2026-08-31T09:02:39.267876"
+      },
+      {
+        "filename": "gene2pubtator3.gz",
+        "last_modified": "2026-08-17T13:43:06",
+        "content_length": 756112471,
+        "bytes_received": 756112471,
+        "sha256": "9b458af3f43049a6f3f182d2da0d989b974d1f9713b04d09f7fdddb39124f772",
+        "etag": null,
+        "rows_parsed": 74519899,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:57:01.352322",
+        "parsed_at": "2026-08-31T08:58:58.480854"
+      },
+      {
+        "filename": "mutation2pubtator3.gz",
+        "last_modified": "2026-08-17T13:43:11",
+        "content_length": 115991110,
+        "bytes_received": 115991110,
+        "sha256": "7e8523dafe956a9be16f72dbd8a7a83d0ed64a6f28e4c5a75d606232a08c1c70",
+        "etag": null,
+        "rows_parsed": 8135311,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:45:08.215498",
+        "parsed_at": "2026-08-31T09:04:51.410181"
+      }
+    ]
+  },
+  "caveat": "The two denominators measure different things and the gaps are reported separately, never summed. 634 papers mention ECD in text but carry no ECD MeSH descriptor.",
+  "generated_at": "2026-08-31T09:05:00.374399+00:00"
+}

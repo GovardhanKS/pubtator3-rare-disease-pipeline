@@ -1,0 +1,13 @@
+[project]
+name = "pubtator3-ecd"
+version = "0.1.0"
+description = "PubTator3 dashboard scoped to Erdheim-Chester disease, with a build stamp that survives the FTP having no version string"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.5",
+    "httpx>=0.27",
+    "fastapi>=0.115",
+    "gradio>=5.0",
+    "uvicorn>=0.30",
+    "pandas>=2.0",
+]

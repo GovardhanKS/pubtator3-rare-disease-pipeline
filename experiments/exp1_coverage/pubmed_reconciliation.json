@@ -1,0 +1,29 @@
+{
+  "screenshot": {
+    "pubmed_plain_search": 1600,
+    "our_text_denominator": 1599,
+    "denominator_is_sound": true,
+    "pubmed_mesh": 965,
+    "ecd_papers_in_pmc_open_access": 421,
+    "web_ui_free_full_text_filtered": 727,
+    "note": "727 is the free-full-text subset of the ~1,600 total, visible in the URL as filter=simsearch2.ffrt. It is a filtered view, not PubMed's count for the disease. It shares no papers with our 743 surplus, since the surplus is by definition outside what that search returns."
+  },
+  "full_text_test": {
+    "surplus": {
+      "n": 743,
+      "in_pmc": 701,
+      "pct_in_pmc": 94.3,
+      "in_pmc_oa": 610,
+      "pct_in_pmc_oa": 82.1
+    },
+    "found_by_both": {
+      "n_sampled": 600,
+      "in_pmc": 236,
+      "pct_in_pmc": 39.3,
+      "in_pmc_oa": 174,
+      "pct_in_pmc_oa": 29.0
+    },
+    "enrichment_pmc": 2.4,
+    "conclusion": "the surplus is concentrated in the papers PubTator3 reads in full, which is what the full-text explanation predicts"
+  }
+}

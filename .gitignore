@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+data/
+*.duckdb
+*.gz
+
+# Working notes for a LinkedIn post, not part of the pipeline. Kept local
+# deliberately: they reference an employer, post strategy and a private style
+# guide. The engineering rationale that matters is in README.md instead.
+build-plan.md
+erdheim-chester-scope.md
+PROGRESS.md
+FINDINGS.md
+ARCHITECTURE.md
+carousel/

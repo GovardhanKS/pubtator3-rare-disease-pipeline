@@ -1,0 +1,145 @@
+{
+  "experiment": "2 - entity coverage, two NER systems on one document set",
+  "question": "Across the ECD paper set, what does AIONER find versus what tmVar3 finds? Mutation never touches AIONER.",
+  "entity_coverage": {
+    "ecd_papers": 2288,
+    "by_type": [
+      {
+        "type": "Disease",
+        "n_rows": 63106,
+        "n_pmids": 2288,
+        "n_concepts": 4160,
+        "ner": "AIONER",
+        "normaliser": "TaggerOne",
+        "pct_of_ecd_papers": 100.0
+      },
+      {
+        "type": "Chemical",
+        "n_rows": 14390,
+        "n_pmids": 1508,
+        "n_concepts": 2293,
+        "ner": "AIONER",
+        "normaliser": "NLM-Chem",
+        "pct_of_ecd_papers": 65.9
+      },
+      {
+        "type": "Gene",
+        "n_rows": 17730,
+        "n_pmids": 1367,
+        "n_concepts": 3175,
+        "ner": "AIONER",
+        "normaliser": "GNorm2",
+        "pct_of_ecd_papers": 59.7
+      },
+      {
+        "type": "Mutation",
+        "n_rows": 2659,
+        "n_pmids": 784,
+        "n_concepts": 1350,
+        "ner": "tmVar3",
+        "normaliser": "tmVar3",
+        "pct_of_ecd_papers": 34.3
+      }
+    ],
+    "driver_genes": [
+      {
+        "concept_id": "673",
+        "n_pmids": 806,
+        "symbol": "BRAF"
+      },
+      {
+        "concept_id": "5604",
+        "n_pmids": 212,
+        "symbol": "MAP2K1"
+      },
+      {
+        "concept_id": "3845",
+        "n_pmids": 193,
+        "symbol": "KRAS"
+      },
+      {
+        "concept_id": "4893",
+        "n_pmids": 186,
+        "symbol": "NRAS"
+      },
+      {
+        "concept_id": "5290",
+        "n_pmids": 109,
+        "symbol": "PIK3CA"
+      },
+      {
+        "concept_id": "369",
+        "n_pmids": 97,
+        "symbol": "ARAF"
+      }
+    ]
+  },
+  "build": {
+    "build_id": "2026-08-17",
+    "span_seconds": 96,
+    "ingested_at": "2026-08-31T08:50:04.426693",
+    "files": [
+      {
+        "filename": "relation2pubtator3.gz",
+        "last_modified": "2026-08-17T13:41:35",
+        "content_length": 297478945,
+        "bytes_received": 297478945,
+        "sha256": "6fca7a4c6a7b6fb9b727d564b1fc1aff1b04c0dfcadbc53aba188fb844e3ac42",
+        "etag": null,
+        "rows_parsed": 40094383,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:54:14.351922",
+        "parsed_at": "2026-08-31T08:59:12.767729"
+      },
+      {
+        "filename": "chemical2pubtator3.gz",
+        "last_modified": "2026-08-17T13:42:42",
+        "content_length": 1874031901,
+        "bytes_received": 1874031901,
+        "sha256": "d973e7022691db5f5dd0f45c46d95063fef30ada3fe8c37095c85b1486c14f80",
+        "etag": null,
+        "rows_parsed": 146957635,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T09:02:40.314501",
+        "parsed_at": "2026-08-31T09:04:47.570189"
+      },
+      {
+        "filename": "disease2pubtator3.gz",
+        "last_modified": "2026-08-17T13:43:00",
+        "content_length": 2173480950,
+        "bytes_received": 2173480950,
+        "sha256": "9896ad7ac33760afdd3d0faca6a8a2cc2478b190dfdf29520872de7d1ef0a3ee",
+        "etag": null,
+        "rows_parsed": 168305967,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:52:18.080623",
+        "parsed_at": "2026-08-31T09:02:39.267876"
+      },
+      {
+        "filename": "gene2pubtator3.gz",
+        "last_modified": "2026-08-17T13:43:06",
+        "content_length": 756112471,
+        "bytes_received": 756112471,
+        "sha256": "9b458af3f43049a6f3f182d2da0d989b974d1f9713b04d09f7fdddb39124f772",
+        "etag": null,
+        "rows_parsed": 74519899,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:57:01.352322",
+        "parsed_at": "2026-08-31T08:58:58.480854"
+      },
+      {
+        "filename": "mutation2pubtator3.gz",
+        "last_modified": "2026-08-17T13:43:11",
+        "content_length": 115991110,
+        "bytes_received": 115991110,
+        "sha256": "7e8523dafe956a9be16f72dbd8a7a83d0ed64a6f28e4c5a75d606232a08c1c70",
+        "etag": null,
+        "rows_parsed": 8135311,
+        "rows_rejected": 0,
+        "downloaded_at": "2026-08-31T08:45:08.215498",
+        "parsed_at": "2026-08-31T09:04:51.410181"
+      }
+    ]
+  },
+  "generated_at": "2026-08-31T09:05:00.416294+00:00"
+}
