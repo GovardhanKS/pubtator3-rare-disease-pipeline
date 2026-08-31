@@ -317,10 +317,39 @@ So the right answer was in the vocabulary, in active use, and was not chosen. **
 disambiguation failure, not a coverage gap, and adding another ontology would not have prevented
 it.**
 
-Where a second reference *would* help is elsewhere, and the numbers say where: the 10.7 million
-unresolved chemicals are largely ions, radicals and particulates that MeSH covers thinly and
-ChEBI or PubChem cover well; the 4.6 million coordinate-only variants are what dbSNP and ClinVar
-exist to ground. Those are harmonisation problems. The eponym is not.
+### And the harmonisation gap is much smaller than the raw counts suggest
+
+The next claim this write-up made was that a second vocabulary *would* help elsewhere - ChEBI or
+PubChem for the unresolved chemicals, dbSNP or ClinVar for the coordinate-only variants. That was
+asserted without testing. `experiments/ontology_probe.py` tested it, and it is mostly wrong.
+
+**First, a counting correction.** The 10,749,370 figure is *annotation rows*. For unresolved rows the
+`Mentions` field aggregates every unresolved chemical in that paper into one pipe-delimited string,
+so the underlying mention count is **68,422,393**, across more than 18 million distinct surface
+forms. The top 50 forms cover only 6.6% of the mass; it is an extremely long tail.
+
+**Sampling 40 forms by mention frequency shows what that tail is made of:** `PBS`, `DMEM`,
+`RPMI-1640`, `Tris-buffered saline`, `RIPA lysis buffer`, `Opti-MEM`, `Alexa 488`, `Hoechst`,
+`gold nanoparticles`, `reactive oxygen and nitrogen species`. Buffers, culture media, dye trade
+names, materials and chemical classes. PubChem returned a CID for 20 of 40, but several of those are
+artefacts of its name endpoint also parsing SMILES - `CC` resolves to ethane, `OC` to methanol - and
+a buffer is a mixture that no compound ontology should be assigning a single identifier to.
+
+**So `-` is frequently the correct answer**, not a failure to be repaired by a richer vocabulary.
+
+**Variants tell the same story.** Of the 4,602,248 coordinate-only rows: 59.06% carry a position,
+2.78% are identity substitutions (`c.25C>C` - extraction noise), 18.52% are an `Allele` form with no
+substitution at all, and **43.98% have a position, a real change and a gene** - resolvable in
+principle. Sampling 10 of those and searching ClinVar found **1 of 10**. The misses are structural,
+not fixable by a lookup: `S` and `ORF1ab` are SARS-CoV-2, `Ighg1` is mouse, and `N297A` is a
+standard antibody-engineering mutation. They are not clinical variants, so no human variant database
+should contain them.
+
+**The honest conclusion.** The unresolved mass is mostly (a) entities that legitimately have no
+single identifier and (b) the extractor firing on things that are not entities. It is not a large
+pool of harmonisable data waiting for a better reference. Which sharpens rather than weakens the
+finding above: the system is largely *right* to abstain on chemicals, and the problem is not that it
+abstains too often - it is that on diseases it cannot abstain at all.
 
 ---
 
