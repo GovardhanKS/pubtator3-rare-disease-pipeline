@@ -108,6 +108,27 @@ Parse order matters: the disease file builds the paper set every other file is f
 and exits without downloading when nothing has changed. The bulk files are monthly, so an
 unconditional weekly download would re-pull 4.9 GB three weeks in four.
 
+## Using it for another disease
+
+The disease scope lives in one place. In `ingest/config.py`:
+
+```python
+ECD_MESH = "MESH:D031249"      # the MeSH descriptor to filter on
+ECD_GENES = {...}              # optional: genes to flag as known drivers
+PUBMED_DENOMINATORS = {...}    # the PubMed counts to compare against
+```
+
+Change the MeSH descriptor, re-run `parse.py` onward, and the pipeline re-scopes: the paper set is
+rebuilt from the disease file and every other file is filtered against it. The driver-gene list only
+drives a "known driver" flag in the genes table, and the PubMed denominators are what the coverage
+comparison is measured against — set them from an E-utilities count for your own disease.
+
+Nothing else is ECD-specific. The two things that will not transfer are the interpretation in
+[`RESULTS.md`](RESULTS.md) and the disease-specific prose in the dashboard tabs.
+
+**A rare disease is a good test case, not a limitation.** Small enough to check every claim by hand,
+and thin enough literature that a normalisation error is visible rather than lost in the average.
+
 ## Data and licence
 
 PubTator3 is produced by the NCBI and is public domain. Wei et.al, *Nucleic Acids Research*
