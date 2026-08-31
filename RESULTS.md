@@ -281,6 +281,47 @@ more than not having looked, and the mechanism has to exist before the number me
 
 ---
 
+
+## 8. How it handles ambiguity, and the record it did not use
+
+The question underneath every finding above: what does this system do when it cannot decide? The
+output format has two ways of saying so, neither of them documented.
+
+| Entity | Mentions labelled | Could not place (`-`) | Two or more candidates |
+|---|---|---|---|
+| Diseases | 168,305,967 | **0** (0.00%) | **0** |
+| Chemicals | 146,957,635 | **10,749,370** (7.31%) | 0 |
+| Genes | 74,519,899 | 0 (0.00%) | 310,917 (0.42%) |
+| Mutations | 8,135,311 | 0 (0.00%) | 0 |
+
+**The ability to abstain exists and is used heavily - just never for diseases.** Chemicals decline
+to guess 10.7 million times: `Ca2+` (58,260), `cAMP` (25,434), `O2` (20,763), `ROS` (14,978),
+`PM2.5` (8,593), and `ketamine` 12,039 times, which is a surprise for a well-catalogued drug. Genes
+never abstain but hand back multiple candidates 310,917 times - `6900;1491938` for *Tax*, a viral
+gene name matching several records. Mutations are a third case again: 43.3% (3,522,742) carry a
+dbSNP identifier, **56.6% (4,602,248) are raw coordinates only**, never tied to a catalogued variant.
+
+Diseases return exactly one answer, every time, across 168 million mentions.
+
+### The record that was available and not used
+
+The obvious remedy for finding 3 is a richer reference vocabulary. That is not the problem here.
+
+**MeSH already contains `C536230`, "Cystic medial necrosis of aorta"** - the correct concept for the
+aortic disease. MeSH's own term search for *Erdheim-Gsell* returns both it and `D031249`. And
+PubTator3 is not restricted to MeSH main descriptors: disease annotations use supplementary
+C-records **7,840,325 times** (4.66% of all disease rows), including **`MESH:C536230` itself, 618
+times** elsewhere in this same corpus.
+
+So the right answer was in the vocabulary, in active use, and was not chosen. **This is a
+disambiguation failure, not a coverage gap, and adding another ontology would not have prevented
+it.**
+
+Where a second reference *would* help is elsewhere, and the numbers say where: the 10.7 million
+unresolved chemicals are largely ions, radicals and particulates that MeSH covers thinly and
+ChEBI or PubChem cover well; the 4.6 million coordinate-only variants are what dbSNP and ClinVar
+exist to ground. Those are harmonisation problems. The eponym is not.
+
 ---
 
 ## What is not established

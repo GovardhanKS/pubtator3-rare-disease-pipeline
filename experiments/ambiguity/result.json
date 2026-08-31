@@ -1,0 +1,136 @@
+{
+  "corpus": [
+    {
+      "file": "disease2pubtator3.gz",
+      "rows": 168305967,
+      "unresolved": 0,
+      "pct_unresolved": 0.0,
+      "multi_candidate": 0,
+      "pct_multi": 0.0,
+      "blank": 0,
+      "distinct_unresolved_surface_forms": 0,
+      "seconds": 40.2
+    },
+    {
+      "file": "gene2pubtator3.gz",
+      "rows": 74519899,
+      "unresolved": 0,
+      "pct_unresolved": 0.0,
+      "multi_candidate": 310917,
+      "pct_multi": 0.417,
+      "blank": 0,
+      "distinct_unresolved_surface_forms": 0,
+      "seconds": 13.6
+    },
+    {
+      "file": "mutation2pubtator3.gz",
+      "rows": 8135311,
+      "unresolved": 0,
+      "pct_unresolved": 0.0,
+      "multi_candidate": 0,
+      "pct_multi": 0.0,
+      "blank": 0,
+      "distinct_unresolved_surface_forms": 0,
+      "seconds": 2.4
+    },
+    {
+      "file": "chemical2pubtator3.gz",
+      "rows": 146957635,
+      "unresolved": 10749370,
+      "pct_unresolved": 7.31,
+      "multi_candidate": 0,
+      "pct_multi": 0.0,
+      "blank": 0,
+      "distinct_unresolved_surface_forms": 7578917,
+      "seconds": 34.8
+    }
+  ],
+  "top_unresolved_forms": {
+    "chemical2pubtator3.gz": [
+      {
+        "surface": "Ca2+",
+        "mentions": 58260
+      },
+      {
+        "surface": "cAMP",
+        "mentions": 25434
+      },
+      {
+        "surface": "Ca(2+)",
+        "mentions": 22655
+      },
+      {
+        "surface": "O2",
+        "mentions": 20763
+      },
+      {
+        "surface": "ROS",
+        "mentions": 14978
+      },
+      {
+        "surface": "ketamine",
+        "mentions": 12039
+      },
+      {
+        "surface": "1H",
+        "mentions": 10070
+      },
+      {
+        "surface": "PM2.5",
+        "mentions": 8593
+      },
+      {
+        "surface": "TC",
+        "mentions": 7257
+      },
+      {
+        "surface": "Mg2+",
+        "mentions": 5883
+      },
+      {
+        "surface": "antiplatelet",
+        "mentions": 5610
+      },
+      {
+        "surface": "acrylic",
+        "mentions": 5376
+      }
+    ]
+  },
+  "ecd_scoped": {
+    "Disease": {
+      "rows": 63106,
+      "unresolved": 0,
+      "multi_candidate": 0,
+      "pct_unresolved": 0.0
+    },
+    "Gene": {
+      "rows": 17730,
+      "unresolved": 0,
+      "multi_candidate": 15,
+      "pct_unresolved": 0.0
+    },
+    "Chemical": {
+      "rows": 14390,
+      "unresolved": 754,
+      "multi_candidate": 0,
+      "pct_unresolved": 5.24
+    },
+    "Mutation": {
+      "rows": 2659,
+      "unresolved": 0,
+      "multi_candidate": 0,
+      "pct_unresolved": 0.0
+    }
+  },
+  "mutation_grounding": {
+    "rows": 8135311,
+    "dbsnp_grounded": 3522742,
+    "pct_dbsnp_grounded": 43.3,
+    "coordinates_only": 4602248,
+    "pct_coordinates_only": 56.57,
+    "with_corresponding_gene": 3698468,
+    "pct_with_gene": 45.46
+  },
+  "note": "multi_candidate counts identifiers that are a list of standalone ids. Mutation identifiers are a compound key and are excluded from that test by construction."
+}

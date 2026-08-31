@@ -33,6 +33,15 @@ updated monthly       record version      0 unreadable      the disease       + 
 - **The published README's relation vocabulary is wrong.** Two documented types are absent from the
   data; six undocumented ones are present, including `treat` at 18% of all relations.
 
+- **It can say "I don't know" — but never about a disease.** Across 168,305,967 disease mentions,
+  **zero** are marked unresolved or ambiguous. Chemicals decline to guess 10,749,370 times (7.31%);
+  genes return multiple candidates 310,917 times; 56.6% of variants are raw coordinates never tied
+  to dbSNP. The abstain option exists and is used heavily — just not where the names collide.
+- **And the right answer was already in the vocabulary.** MeSH has `C536230`, "Cystic medial
+  necrosis of aorta", and PubTator3 uses that record 618 times elsewhere in this corpus. So the
+  eponym error is a disambiguation failure, not a coverage gap — a second ontology would not have
+  prevented it.
+
 Full write-up: **[RESULTS.md](RESULTS.md)**
 
 ## Running it
