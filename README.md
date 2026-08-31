@@ -23,7 +23,10 @@ updated monthly       record version      0 unreadable      the disease       + 
 | Recall against the MeSH-indexed set | **98.3%** |
 
 - **743 papers a name search will not return**, because the name is in the body text. 94% of them
-  are in PubMed Central, against 39% of the papers both approaches find.
+  are in PubMed Central, against 39% of the papers both approaches find. But this is a **corpus
+  effect, not a method effect** - PMC's own full-text string search returns 2,349, so reading more
+  of each paper is the whole of the count difference. What the annotation adds is structure:
+  identifiers you can count by gene, drug, year and relation.
 - **One systematic error.** Jakob Erdheim described two unrelated conditions. 35 of 40
   ambiguous-eponym papers are Erdheim-**Gsell** aortic disease filed as Erdheim-**Chester**
   histiocytosis — including a Marfan syndrome paper. Reproduced against the live API.

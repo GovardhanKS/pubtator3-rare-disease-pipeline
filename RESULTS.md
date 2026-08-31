@@ -63,9 +63,25 @@ both systems find.
 readable. Two independent measures - absence of the eponym from the abstract, and PMC membership -
 both land at 94%.
 
-This is the part of the result that favours automated annotation, and it is the opposite of the
-"recall loss" the plan expected. For a disease with ~1,600 papers, a 46% increase in reachable
-literature is not a marginal gain.
+### The control that says how much of this is the annotation, and how much is the corpus
+
+Both checks above establish that the surplus comes from body text. Neither establishes that
+*entity recognition* is what reached it - and the obvious control had not been run.
+
+**PubMed Central's own full-text search for `"Erdheim-Chester"` returns 2,349.** A plain string
+match over full text reaches at least as many papers as the annotation does, over a smaller corpus.
+
+So the count difference is a **corpus effect, not a method effect.** Reading more of each paper is
+the whole of it. This is the opposite of the "recall loss" the plan expected, and it is a real
+gain in reachable literature - but it is not evidence that entity recognition finds papers a
+search cannot.
+
+What entity recognition adds is not more papers. It is that every mention carries a standing
+identifier, so the corpus can be counted by gene, by drug, by year and by relation. A string
+search returns documents; this returns a table. Findings 6 and 7 are made of that, and no string
+search produces them.
+
+It also adds an error class a string search cannot have - finding 3.
 
 ### Reconciling PubMed's on-screen count - a trap worth documenting
 
