@@ -1,0 +1,17 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # Only what the tests import. `pip install -e .` doesn't work here (no
+      # build-system, flat layout) and would pull gradio/fastapi/pandas anyway.
+      - run: pip install "duckdb>=1.5" "httpx>=0.27" pytest
+      - run: pytest -q

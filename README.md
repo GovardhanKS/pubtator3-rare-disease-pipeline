@@ -1,5 +1,7 @@
 # PubTator3 → rare disease literature map
 
+[![CI](https://github.com/GovardhanKS/pubtator3-rare-disease-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/GovardhanKS/pubtator3-rare-disease-pipeline/actions/workflows/ci.yml)
+
 Ingests the NCBI **PubTator3** bulk annotation files, scopes them to one disease, and serves the
 result as a dashboard and a JSON API.
 
