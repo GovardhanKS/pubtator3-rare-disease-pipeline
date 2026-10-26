@@ -11,3 +11,7 @@ dependencies = [
     "uvicorn>=0.30",
     "pandas>=2.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
